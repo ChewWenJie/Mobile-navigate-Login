@@ -60,7 +60,7 @@ class RegisterActivity : AppCompatActivity() {
             .addOnSuccessListener{
                 Log.d("RegisterActivity", "finally saved")
                 Toast.makeText(this, "Successfull", Toast.LENGTH_LONG).show()
-                //val intent = Intent(this, latest_activity::class.java)
+                //val intent = Intent(this, LatestActivity::class.java)
                 //intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                // startActivity(intent)
             }

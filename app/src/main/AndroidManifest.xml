@@ -39,6 +39,17 @@
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout">
         </activity>
+        <activity android:name=".NewMessage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewMessage" />
+        </activity>
+        <activity android:name=".chat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewMessage" />
+        </activity>
+
     </application>
 
 </manifest>
