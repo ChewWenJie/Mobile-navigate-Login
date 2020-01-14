@@ -83,6 +83,9 @@ class FileFragment : Fragment() {
 
     }
 
+
+
+
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
@@ -133,7 +136,7 @@ class FileFragment : Fragment() {
                     uri ->
                     var url: String = uri.toString()
                     var id: String = filetable.push().key.toString()
-                    var name: String = filename.text.toString()
+                    var name: String = filename.text.trim().toString()
                     var file = File(id, url, name)
                     filetable.child(id).setValue(file)
 

@@ -73,7 +73,7 @@ class CourseRecyclerAdapter (val courseList: List<Course>, val context: Context)
 //                    .commit()
 
             activity.supportFragmentManager.beginTransaction()
-                    .replace(R.id.courseFragment,myFragment).commit()//
+                    .replace(R.id.courseFragment,myFragment).addToBackStack(null).commit()//
 
         }
         holder.blog_title.text = courseList.get(position).title

@@ -27,7 +27,7 @@ class AddDialog : AppCompatDialogFragment() {
             .setPositiveButton("OK") { dialog, i ->
                 val studentdatabaseref = FirebaseDatabase.getInstance().getReference("Course")
                 val id = studentdatabaseref.push().key
-                val name = editTextTitle!!.text.toString()
+                val name = editTextTitle!!.text.trim().toString()
                 val course = Course(id.toString(), name.trim(), "asd","Koay Jin Kee")
                 if (TextUtils.isEmpty(name))
                 {
